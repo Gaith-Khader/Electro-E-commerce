@@ -1,0 +1,41 @@
+/* smartphones - small */
+@media (max-width:576px){
+    nav .nav-img{
+        margin: auto;
+    }
+    nav .search select{
+        width: 25%;
+    }
+    nav .search input{
+        width: 50%;
+    }
+    nav .search button{
+        width: 25%;
+    }
+    nav .cart{
+        margin-right: auto;
+    }
+
+    .newsletter input{
+        width: 50% !important;
+    }
+    .newsletter button{
+        width: 37% !important;
+    }
+    .news .back-img{
+        width: 100%;
+        top: 110px;
+        left: -140px;
+    }
+}
+
+/* tablets - medium */
+@media (min-width:576px) and (max-width:992px){
+    nav .nav-img,
+    nav .cart{
+        margin: auto;
+    }
+}
+
+/* macbook and other - large */
+@media (min-width:992px) and (max-width:1280px){}

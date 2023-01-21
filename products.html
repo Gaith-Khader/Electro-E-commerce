@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!-- slick css -->
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+    <!-- top-navbar - start -->
+    <section class="top-navbar py-3">
+        <div class="container">
+            <div class="content d-flex flex-wrap justify-content-between align-items-center">
+                <ul class="list-right">
+                    <li class="item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+021955184">+021-95-51-84</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:email@email.com">email@email.com</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">1734 Stonecoal Road</a>
+                    </li>
+                </ul>
+                <ul class="list-left">
+                    <li class="item">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <a href="#">USD</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <a href="sign-up.html">sign up</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <a href="login.html">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- top-navbar - end -->
+
+    <!-- navbar - start -->
+    <nav id="#navbar" class="navbar">
+        <div class="container">
+            <div class="content row w-100">
+                <div class="nav-img col-5 col-md-3 col-lg-2 d-flex justify-content-start align-items-center">
+                    <img src="assets/img/logo.png" alt="logo" class="w-100">
+                </div>
+                <div class="search col-md-12 col-lg-7 m-auto">
+                    <form class="d-flex justify-content-center">
+                        <select name="category">
+                            <option>All categories</option>
+                            <option>category 1</option>
+                            <option>category 2</option>
+                        </select>
+                        <input type="search" placeholder="Search here">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <div class="cart col-9 col-md-3 col-lg-2 mt-4 d-flex justify-content-end align-items-center">
+                    <ul class="list d-flex align-items-center">
+                        <li class="item">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-lg-center">
+                                <span class="num">2</span>
+                                <i class="fa-regular fa-heart"></i>
+                                <span>Your Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="item dropdown">
+                            <a href="#"
+                                class="d-flex flex-column justify-content-center align-items-lg-center dropdown-toggle"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="num">3</span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Your Cart</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product01.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Lenovo Idea-Pad 320</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$520.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product02.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Beats Solo3 Headphones</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$183.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product07.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Samsung s7 edge</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$259.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-desc p-3">
+                                    <small>3 Item(s) Selected</small>
+                                    <h5>SUBTOTAL: $962.00</h5>
+                                </div>
+                                <div class="dropdown-btns d-flex justify-content-evenly align-items-center">
+                                    <a href="cart.html" class=" w-50 py-3">View cart</a>
+                                    <a href="checkout.html" class=" w-50 py-3">Checkout <i
+                                            class="fa-solid fa-circle-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar - end -->
+
+    <!-- navigation - start -->
+    <section class="navigation d-none d-none d-lg-block d-xl-block">
+        <div class="container">
+            <ul class="navigation-list d-flex">
+                <li class="navigation-item me-4 py-3"><a href="index.html">Home</a></li>
+                <li class="navigation-item me-4 py-3"><a href="index.html #hot-deal">Hot Deals</a></li>
+                <li class="navigation-item me-4 py-3"><a href="categories.html">Categories</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Laptops</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">SmartPhones</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Cameras</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Accessories</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- navigation - end -->
+<!-- *********************************************************************************************************************** -->
+
+
+    <!-- breadcrumb - start -->
+    <section class="breadcrumb-list">
+        <div class="container">
+            <div aria-label="breadcrumb">
+                <ol class="breadcrumb m-0 p-0 border-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-uppercase" aria-current="page"><a href="categories.html">all categories</a></li>
+                    <li class="breadcrumb-item text-uppercase" aria-current="page"><a href="store.html">accessories</a></li>
+                    <li class="breadcrumb-item text-uppercase" aria-current="page">product name goes here</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb - end -->
+
+    <section class="product-main my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 slider-nav order-0">
+                    <img src="assets/img/products/product01.png" alt="1">
+                    <img src="assets/img/products/product02.png" alt="2">
+                    <img src="assets/img/products/product03.png" alt="3">
+                    <img src="assets/img/products/product04.png" alt="4">
+                    <img src="assets/img/products/product05.png" alt="5">
+                    <img src="assets/img/products/product06.png" alt="6">
+                </div>
+                <div class="col-md-5 slider-for">
+                    <img src="assets/img/products/product01.png" alt="1">
+                    <img src="assets/img/products/product02.png" alt="2">
+                    <img src="assets/img/products/product03.png" alt="3">
+                    <img src="assets/img/products/product04.png" alt="4">
+                    <img src="assets/img/products/product05.png" alt="5">
+                    <img src="assets/img/products/product06.png" alt="6">
+                </div>
+                <div class="col-md-5 product-info">
+                    <div class="product-details">
+                        <h2 class="product-name text-uppercase">product name goes here</h2>
+                        <div class="d-flex my-3">
+                            <div class="product-rating me-3">
+                                <i class="fa-regular fa-star fill"></i>
+                                <i class="fa-regular fa-star fill"></i>
+                                <i class="fa-regular fa-star fill"></i>
+                                <i class="fa-regular fa-star fill"></i>
+                                <i class="fa-regular fa-star unfill"></i>
+                            </div>
+                            <a class="review-link" href="#">10 Review(s) | Add your review</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <h3 class="product-price me-4">$980.00 <del class="product-old-price fw-light">$990.00</del></h3>
+                            <span class="product-available">In Stock</span>
+                        </div>
+                        <p class="product-para my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <div class="product-options my-3">
+                            <label class="me-4">
+                                Size
+                                <select class="input-select">
+                                    <option value="0">X</option>
+                                </select>
+                            </label>
+                            <label>
+                                Color
+                                <select class="input-select">
+                                    <option value="0">Red</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="add-to-cart d-flex">
+                            <div class="qty-label d-flex align-items-center">
+                                <span class="text-uppercase">qty</span>
+                                <div class="input-number me-4">
+                                    <input type="number">
+                                </div>
+                            </div>
+                            <a href="#" class="add-to-cart-btn text-uppercase"><i class="fa fa-shopping-cart"></i> add to cart</a>
+                        </div>
+
+                        <ul class="product-btns d-flex my-4">
+                            <li><a href="#" class="me-4 text-uppercase"><i class="fa-regular fa-heart"></i> add to wishlist</a></li>
+                            <li><a href="#" class="text-uppercase"><i class="fa fa-exchange"></i> add to compare</a></li>
+                        </ul>
+
+                        <ul class="product-links my-4 d-flex">
+                            <li class="me-2 text-uppercase">Category:</li>
+                            <li class="me-4 text-uppercase"><a href="#">Headphones</a></li>
+                            <li class="text-uppercase"><a href="#">Accessories</a></li>
+                        </ul>
+
+                        <ul class="product-links d-flex">
+                            <li>Share:</li>
+                            <li><a href="#"><i class="ms-3 fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="ms-3 fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="ms-3 fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="ms-3 fa-solid fa-envelope"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- description - start -->
+    <section class="description">
+        <div class="container">
+            <div class="tabs">
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Details</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Review (3)</button>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <div class="row py-5">
+                        <!-- Rating -->
+                        <div class="col-md-3">
+                            <div class="rating">
+                                <div class="rating-avg d-flex my-4">
+                                    <span>4.5</span>
+                                    <div class="rating-stars ms-2">
+                                        <i class="fa fa-star fill"></i>
+                                        <i class="fa fa-star fill"></i>
+                                        <i class="fa fa-star fill"></i>
+                                        <i class="fa fa-star fill"></i>
+                                        <i class="fa fa-star unfill"></i>
+                                    </div>
+                                </div>
+                                <ul class="rating-below">
+                                    <li class="d-flex my-2">
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                        </div>
+                                        <div class="rating-progress-80 mx-2">
+                                            <div style="width:100px;"></div>
+                                        </div>
+                                        <span class="sum">3</span>
+                                    </li>
+                                    <li class="d-flex my-2">
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                        </div>
+                                        <div class="rating-progress-60 mx-2">
+                                            <div style="width:100px;"></div>
+                                        </div>
+                                        <span class="sum">2</span>
+                                    </li>
+                                    <li class="d-flex my-2">
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                        </div>
+                                        <div class="rating-progress mx-2">
+                                            <div style="width:100px;"></div>
+                                        </div>
+                                        <span class="sum">0</span>
+                                    </li>
+                                    <li class="d-flex my-2">
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                        </div>
+                                        <div class="rating-progress mx-2">
+                                            <div style="width:100px;"></div>
+                                        </div>
+                                        <span class="sum">0</span>
+                                    </li>
+                                    <li class="d-flex my-2">
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star fill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                            <i class="fa fa-star unfill"></i>
+                                        </div>
+                                        <div class="rating-progress mx-2">
+                                            <div style="width:100px;"></div>
+                                        </div>
+                                        <span class="sum">0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Rating -->
+
+                        <!-- Reviews -->
+                        <div class="col-md-6">
+                            <div class="reviews">
+                                <ul class="reviews-col">
+                                    <li class="d-flex my-4">
+                                        <div class="review-heading">
+                                            <h5 class="name">John</h5>
+                                            <p class="date">27 DEC 2018, 8:0 PM</p>
+                                            <div class="review-rating d-flex">
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star unfill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-body w-75 ms-4">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex my-4">
+                                        <div class="review-heading">
+                                            <h5 class="name">John</h5>
+                                            <p class="date">27 DEC 2018, 8:0 PM</p>
+                                            <div class="review-rating d-flex">
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star unfill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-body w-75 ms-4">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex my-4">
+                                        <div class="review-heading">
+                                            <h5 class="name">John</h5>
+                                            <p class="date">27 DEC 2018, 8:0 PM</p>
+                                            <div class="review-rating d-flex">
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star fill"></i>
+                                                <i class="fa fa-star unfill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-body w-75 ms-4">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                        </div>
+                                    </li>
+                                
+                                </ul>
+                                <ul class="reviews-page d-flex justify-content-center">
+                                    <li class="active"><a href="#" class="">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Reviews -->
+
+                        <!-- Review Form -->
+                        <div class="col-md-3">
+                            <div id="review-form">
+                                <form class="review-form">
+                                    <input class="input mb-3" type="text" placeholder="Your Name">
+                                    <input class="input mb-3" type="email" placeholder="Your Email">
+                                    <textarea class="input mb-3" placeholder="Your Review"></textarea>
+                                    <div class="input-rating d-flex">
+                                        <span class="me-2">Your Rating: </span>
+                                        <div class="stars">
+                                            <input id="star5" name="rating" value="5" type="radio"><label for="star5"></label>
+                                            <input id="star4" name="rating" value="4" type="radio"><label for="star4"></label>
+                                            <input id="star3" name="rating" value="3" type="radio"><label for="star3"></label>
+                                            <input id="star2" name="rating" value="2" type="radio"><label for="star2"></label>
+                                            <input id="star1" name="rating" value="1" type="radio"><label for="star1"></label>
+                                        </div>
+                                    </div>
+                                    <button class="primary-btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /Review Form -->
+                    </div>
+                </div>
+                <!-- /tab3  -->
+            </div>
+        </div>
+    </section>
+    <!-- description - end -->
+
+    <!-- products 2.0 - start -->
+    <section class="products mt-5">
+            <div class="container">
+                <div class="d-flex justify-content-center my-5 flex-wrap">
+                    <div >
+                        <h3 class="text-uppercase">related products</h3>
+                    </div>
+                </div>
+                <div class="row products-slider">
+                    <!-- product start -->
+                        <div class="product mt-1">
+                            <div class="offer d-flex justify-content-end p-2">
+                                <div class="discount">
+                                    <span class="price-discount me-1">-30%</span>
+                                </div>
+                                <div class="new-box">
+                                    <span class="text-uppercase new">new</span>
+                                </div>
+                            </div>
+                            <div class="product-img">
+                                <img src="assets/img/products/product01.png" alt="laptop1" class="w-100">
+                            </div>
+                            <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="text-uppercase product-cat pb-1">category</p>
+                                <a class="text-uppercase product-title py-1">Apple Mac-Book <span
+                                        class="text-lowercase">2nd</span> gen</a>
+                                <div class="price py-1">
+                                    <span class="new">$1199.99</span>
+                                    <span class="old text-decoration-line-through">$1800.00</span>
+                                </div>
+                                <div class="product-rate py-1">
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                </div>
+                                <div class="product-icons p-3">
+                                    <i class="fa-regular fa-heart me-4 heart">
+                                        <span class="text-uppercase wishlist">add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-right-left me-4 arrow">
+                                        <span class="text-uppercase compare">add to compare</span>
+                                    </i>
+                                    <i class="fa-regular fa-eye eye">
+                                        <span class="text-uppercase view">quick view</span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                            </div>
+                        </div>
+                    <!-- product end -->
+    
+                    <!-- product start -->
+                        <div class="product mt-1">
+                            <div class="offer d-flex justify-content-end p-2">
+                                <div class="discount">
+                                    <span class="price-discount me-1">-30%</span>
+                                </div>
+                                <div class="new-box">
+                                    <span class="text-uppercase new">new</span>
+                                </div>
+                            </div>
+                            <div class="product-img">
+                                <img src="assets/img/products/product02.png" alt="product1" class="w-100">
+                            </div>
+                            <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="text-uppercase product-cat pb-1">category</p>
+                                <a class="text-uppercase product-title py-1">Apple Mac-Book 15.6</a>
+                                <div class="price py-1">
+                                    <span class="new">$999.99</span>
+                                    <span class="old text-decoration-line-through">$1400.00</span>
+                                </div>
+                                <div class="product-rate py-1">
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-icons p-3">
+                                    <i class="fa-regular fa-heart me-4 heart">
+                                        <span class="text-uppercase wishlist">add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-right-left me-4 arrow">
+                                        <span class="text-uppercase compare">add to compare</span>
+                                    </i>
+                                    <i class="fa-regular fa-eye eye">
+                                        <span class="text-uppercase view">quick view</span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                            </div>
+                        </div>
+                    <!-- product end -->
+    
+                    <!-- product start -->
+                        <div class="product mt-1">
+                            <div class="offer d-flex justify-content-end p-2">
+                                <div class="discount">
+                                    <span class="price-discount me-1">-30%</span>
+                                </div>
+                                <div class="new-box">
+                                    <span class="text-uppercase new">new</span>
+                                </div>
+                            </div>
+                            <div class="product-img">
+                                <img src="assets/img/products/product03.png" alt="product1" class="w-100">
+                            </div>
+                            <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="text-uppercase product-cat pb-1">category</p>
+                                <a class="text-uppercase product-title py-1">product name goes here</a>
+                                <div class="price py-1">
+                                    <span class="new">$739.99</span>
+                                    <span class="old text-decoration-line-through">$950.00</span>
+                                </div>
+                                <div class="product-rate py-1">
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-icons p-3">
+                                    <i class="fa-regular fa-heart me-4 heart">
+                                        <span class="text-uppercase wishlist">add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-right-left me-4 arrow">
+                                        <span class="text-uppercase compare">add to compare</span>
+                                    </i>
+                                    <i class="fa-regular fa-eye eye">
+                                        <span class="text-uppercase view">quick view</span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                            </div>
+                        </div>
+                    <!-- product end -->
+    
+                    <!-- product start -->
+                        <div class="product mt-1">
+                            <div class="offer d-flex justify-content-end p-2">
+                                <div class="discount">
+                                    <span class="price-discount me-1">-30%</span>
+                                </div>
+                                <div class="new-box">
+                                    <span class="text-uppercase new">new</span>
+                                </div>
+                            </div>
+                            <div class="product-img">
+                                <img src="assets/img/products/product04.png" alt="product1" class="w-100">
+                            </div>
+                            <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="text-uppercase product-cat pb-1">category</p>
+                                <a class="text-uppercase product-title py-1">product name goes here</a>
+                                <div class="price py-1">
+                                    <span class="new">$649.99</span>
+                                    <span class="old text-decoration-line-through">$800.00</span>
+                                </div>
+                                <div class="product-rate py-1">
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-icons p-3">
+                                    <i class="fa-regular fa-heart me-4 heart">
+                                        <span class="text-uppercase wishlist">add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-right-left me-4 arrow">
+                                        <span class="text-uppercase compare">add to compare</span>
+                                    </i>
+                                    <i class="fa-regular fa-eye eye">
+                                        <span class="text-uppercase view">quick view</span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                            </div>
+                        </div>
+                    <!-- product end -->
+    
+                    <!-- product start -->
+                        <div class="product mt-1">
+                            <div class="offer d-flex justify-content-end p-2">
+                                <div class="discount">
+                                    <span class="price-discount me-1">-30%</span>
+                                </div>
+                                <div class="new-box">
+                                    <span class="text-uppercase new">new</span>
+                                </div>
+                            </div>
+                            <div class="product-img">
+                                <img src="assets/img/products/product04.png" alt="product1" class="w-100">
+                            </div>
+                            <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="text-uppercase product-cat pb-1">category</p>
+                                <a class="text-uppercase product-title py-1">product name goes here</a>
+                                <div class="price py-1">
+                                    <span class="new">$649.99</span>
+                                    <span class="old text-decoration-line-through">$800.00</span>
+                                </div>
+                                <div class="product-rate py-1">
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-icons p-3">
+                                    <i class="fa-regular fa-heart me-4 heart">
+                                        <span class="text-uppercase wishlist">add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-right-left me-4 arrow">
+                                        <span class="text-uppercase compare">add to compare</span>
+                                    </i>
+                                    <i class="fa-regular fa-eye eye">
+                                        <span class="text-uppercase view">quick view</span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                            </div>
+                        </div>
+                    <!-- product end -->
+    
+                    <!-- product start -->
+                        <div class="product mt-1">
+                            <div class="offer d-flex justify-content-end p-2">
+                                <div class="discount">
+                                    <span class="price-discount me-1">-30%</span>
+                                </div>
+                                <div class="new-box">
+                                    <span class="text-uppercase new">new</span>
+                                </div>
+                            </div>
+                            <div class="product-img">
+                                <img src="assets/img/products/product04.png" alt="product1" class="w-100">
+                            </div>
+                            <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="text-uppercase product-cat pb-1">category</p>
+                                <a class="text-uppercase product-title py-1">product name goes here</a>
+                                <div class="price py-1">
+                                    <span class="new">$649.99</span>
+                                    <span class="old text-decoration-line-through">$800.00</span>
+                                </div>
+                                <div class="product-rate py-1">
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star fill"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product-icons p-3">
+                                    <i class="fa-regular fa-heart me-4 heart">
+                                        <span class="text-uppercase wishlist">add to wishlist</span>
+                                    </i>
+                                    <i class="fa-solid fa-right-left me-4 arrow">
+                                        <span class="text-uppercase compare">add to compare</span>
+                                    </i>
+                                    <i class="fa-regular fa-eye eye">
+                                        <span class="text-uppercase view">quick view</span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                            </div>
+                        </div>
+                    <!-- product end -->
+                </div>
+            </div>
+    </section>
+    <!-- products 2.0 - end -->
+
+<!-- *********************************************************************************************************************** -->
+
+    <!-- footer - start -->
+    <footer class="footer-top pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut.
+                        </p>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-location-dot"></i>1734 Stonecoal Road</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>email@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Hot deals</a></li>
+                            <li><a href="store.html">Laptops</a></li>
+                            <li><a href="store.html">Smartphones</a></li>
+                            <li><a href="store.html">Cameras</a></li>
+                            <li><a href="store.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Information</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Orders and Returns</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer - end -->
+
+    <!-- footer-bottom - start -->
+    <section class="footer-bottom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="footer-payments d-flex gap-2 justify-content-center align-items-center">
+                        <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-credit-card"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-discover"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-amex"></i></a></li>
+                    </ul>
+                    <span class="copyright">
+                        Copyright &copy; 2023 All rights reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-bottom - end -->
+
+    <!-- bootstrap js -->
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- jquery js -->
+    <script src="vendor/js/jquery-1.11.0.min.js"></script>
+    <!-- slick js -->
+    <script src="vendor/js/slick.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+    <!-- custom product js -->
+    <script src="assets/js/products.js"></script>
+    <!-- slider -->
+    <script>
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<span class="prev_arrow"><i class="fa-solid fa-chevron-left"></i></span>',
+        nextArrow: '<span class="next_arrow"><i class="fa-solid fa-chevron-right"></i></span>',
+        arrows: true,
+        fade: true,
+        // autoplay:true,
+        centerMode:true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        nextArrow: '<span class="prev_arrow"><i class="fa-solid fa-chevron-down"></i></span>',
+        prevArrow: '<span class="next_arrow"><i class="fa-solid fa-chevron-up"></i></span>',
+        dots: false,
+        centerPadding: '0',
+        vertical:true,
+        centerMode:true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 770,
+                settings: {
+                arrows: false,
+                vertical:false,
+                dots:true
+                }
+            }
+        ]
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!-- slick css -->
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <!-- noUiSlider css -->
+    <link rel="stylesheet" href="vendor/css/nouislider.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+    <!-- top-navbar - start -->
+    <section class="top-navbar py-3">
+        <div class="container">
+            <div class="content d-flex flex-wrap justify-content-between align-items-center">
+                <ul class="list-right">
+                    <li class="item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+021955184">+021-95-51-84</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:email@email.com">email@email.com</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">1734 Stonecoal Road</a>
+                    </li>
+                </ul>
+                <ul class="list-left">
+                    <li class="item">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <a href="#">USD</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <a href="sign-up.html">sign up</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <a href="login.html">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- top-navbar - end -->
+
+    <!-- navbar - start -->
+    <nav id="#navbar" class="navbar">
+        <div class="container">
+            <div class="content row w-100">
+                <div class="nav-img col-5 col-md-3 col-lg-2 d-flex justify-content-start align-items-center">
+                    <img src="assets/img/logo.png" alt="logo" class="w-100">
+                </div>
+                <div class="search col-md-12 col-lg-7 m-auto">
+                    <form class="d-flex justify-content-center">
+                        <select name="category">
+                            <option>All categories</option>
+                            <option>category 1</option>
+                            <option>category 2</option>
+                        </select>
+                        <input type="search" placeholder="Search here">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <div class="cart col-9 col-md-3 col-lg-2 mt-4 d-flex justify-content-end align-items-center">
+                    <ul class="list d-flex align-items-center">
+                        <li class="item">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-lg-center">
+                                <span class="num">2</span>
+                                <i class="fa-regular fa-heart"></i>
+                                <span>Your Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="item dropdown">
+                            <a href="#"
+                                class="d-flex flex-column justify-content-center align-items-lg-center dropdown-toggle"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="num">3</span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Your Cart</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product01.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Lenovo Idea-Pad 320</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$520.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product02.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Beats Solo3 Headphones</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$183.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product07.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Samsung s7 edge</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$259.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-desc p-3">
+                                    <small>3 Item(s) Selected</small>
+                                    <h5>SUBTOTAL: $962.00</h5>
+                                </div>
+                                <div class="dropdown-btns d-flex justify-content-evenly align-items-center">
+                                    <a href="cart.html" class=" w-50 py-3">View cart</a>
+                                    <a href="checkout.html" class=" w-50 py-3">Checkout <i
+                                            class="fa-solid fa-circle-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar - end -->
+
+    <!-- navigation - start -->
+    <section class="navigation d-none d-none d-lg-block d-xl-block">
+        <div class="container">
+            <ul class="navigation-list d-flex">
+                <li class="navigation-item me-4 py-3"><a href="index.html">Home</a></li>
+                <li class="navigation-item me-4 py-3"><a href="index.html #hot-deal">Hot Deals</a></li>
+                <li class="navigation-item me-4 py-3"><a href="categories.html">Categories</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Laptops</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">SmartPhones</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Cameras</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Accessories</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- navigation - end -->
+<!-- ******************************************************************************************************************************************************************************************************* -->
+
+
+    <!-- breadcrumb - start -->
+    <section class="breadcrumb-list">
+        <div class="container">
+            <div aria-label="breadcrumb">
+                <ol class="breadcrumb m-0 p-0 border-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-uppercase" aria-current="page">all categories</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb - end -->
+
+    <!-- cats - start -->
+    <header class="shop my-3">
+        <div class="container">
+            <div class="row justify-content-center g-3">
+                <div class="col-11 col-md-5 cat">
+                    <div class="shop-item">
+                        <div class="img-item">
+                            <img src="assets/img/shop/shop01.png.webp" alt="shop1" class="w-100">
+                        </div>
+                        <div class="desc-item">
+                            <h3>Laptop<br>Collection</h3>
+                            <a href="store.html" class="text-uppercase">shop now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-md-5 cat">
+                    <div class="shop-item">
+                        <div class="img-item">
+                            <img src="assets/img/shop/shop03.png.webp" alt="shop3" class="w-100">
+                        </div>
+                        <div class="desc-item">
+                            <h3>Accessories<br>Collection</h3>
+                            <a href="store.html" class="text-uppercase">shop now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-md-5 cat">
+                    <div class="shop-item">
+                        <div class="img-item">
+                            <img src="assets/img/shop/shop02.png.webp" alt="shop2" class="w-100">
+                        </div>
+                        <div class="desc-item">
+                            <h3>Cameras<br>Collection</h3>
+                            <a href="store.html" class="text-uppercase">shop now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-md-5 cat">
+                    <div class="shop-item m-auto">
+                        <div class="img-item">
+                            <img src="assets/img/shop/shop04.png.webp" alt="shop2" class="w-100">
+                        </div>
+                        <div class="desc-item">
+                            <h3>Smart<br>Phones</h3>
+                            <a href="store.html" class="text-uppercase">shop now <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- cats - end -->
+
+
+
+<!-- ******************************************************************************************************************************************************************************************************* -->
+    <!-- news-latter start -->
+    <section class="news py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <p class="pb-3">Sign Up for the <strong>NEWSLETTER</strong></p>
+                        <form class="d-flex justify-content-center pb-3">
+                            <input class="email" type="email" placeholder="Enter Your Email">
+                            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="newsletter-follow d-flex justify-content-center align-items-center my-4 gap-2">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="back-img">
+                        <img src="assets/img/envelope.png" class="w-25" alt="envelope">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news-latter end -->
+
+    <!-- footer - start -->
+    <footer class="footer-top pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut.
+                        </p>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-location-dot"></i>1734 Stonecoal Road</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>email@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Hot deals</a></li>
+                            <li><a href="store.html">Laptops</a></li>
+                            <li><a href="store.html">Smartphones</a></li>
+                            <li><a href="store.html">Cameras</a></li>
+                            <li><a href="store.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Information</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Orders and Returns</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer - end -->
+
+    <!-- footer-bottom - start -->
+    <section class="footer-bottom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="footer-payments d-flex gap-2 justify-content-center align-items-center">
+                        <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-credit-card"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-discover"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-amex"></i></a></li>
+                    </ul>
+                    <span class="copyright">
+                        Copyright &copy; 2023 All rights reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-bottom - end -->
+
+    <!-- bootstrap js -->
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- jquery js -->
+    <script src="vendor/js/jquery-1.11.0.min.js"></script>
+    <!-- slick js -->
+    <script src="vendor/js/slick.min.js"></script>
+    <!-- noUiSlider js -->
+    <script src="vendor/js/nouislider.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+    <!-- custom product js -->
+    <script src="assets/js/products.js"></script>
+</body>
+
+</html>

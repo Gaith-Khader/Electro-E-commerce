@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!-- slick css -->
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <!-- noUiSlider css -->
+    <link rel="stylesheet" href="vendor/css/nouislider.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+    <!-- top-navbar - start -->
+    <section class="top-navbar py-3">
+        <div class="container">
+            <div class="content d-flex flex-wrap justify-content-between align-items-center">
+                <ul class="list-right">
+                    <li class="item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+021955184">+021-95-51-84</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:email@email.com">email@email.com</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">1734 Stonecoal Road</a>
+                    </li>
+                </ul>
+                <ul class="list-left">
+                    <li class="item">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <a href="#">USD</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <a href="sign-up.html">sign up</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <a href="login.html">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- top-navbar - end -->
+
+    <!-- navbar - start -->
+    <nav id="#navbar" class="navbar">
+        <div class="container">
+            <div class="content row w-100">
+                <div class="nav-img col-5 col-md-3 col-lg-2 d-flex justify-content-start align-items-center">
+                    <img src="assets/img/logo.png" alt="logo" class="w-100">
+                </div>
+                <div class="search col-md-12 col-lg-7 m-auto">
+                    <form class="d-flex justify-content-center">
+                        <select name="category">
+                            <option>All categories</option>
+                            <option>category 1</option>
+                            <option>category 2</option>
+                        </select>
+                        <input type="search" placeholder="Search here">
+                        <button>Search</button>
+                    </form>
+                </div>
+                <div class="cart col-9 col-md-3 col-lg-2 mt-4 d-flex justify-content-end align-items-center">
+                    <ul class="list d-flex align-items-center">
+                        <li class="item">
+                            <a href="#" class="d-flex flex-column justify-content-center align-items-lg-center">
+                                <span class="num">2</span>
+                                <i class="fa-regular fa-heart"></i>
+                                <span>Your Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="item dropdown">
+                            <a href="#"
+                                class="d-flex flex-column justify-content-center align-items-lg-center dropdown-toggle"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="num">3</span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Your Cart</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product01.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Lenovo Idea-Pad 320</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$520.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product02.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Beats Solo3 Headphones</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$183.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                    <li class="item d-flex p-1">
+                                        <div class="item-img w-25">
+                                            <img src="assets/img/products/product07.png" alt="product">
+                                        </div>
+                                        <div class="item-desc w-75 p-3">
+                                            <a href="#" class="d-block fw-bold">Samsung s7 edge</a>
+                                            <span class="d-inline me-3">1x</span>
+                                            <span class="d-inline fw-bold">$259.00</span>
+                                        </div>
+                                        <span class="x-btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-desc p-3">
+                                    <small>3 Item(s) Selected</small>
+                                    <h5>SUBTOTAL: $962.00</h5>
+                                </div>
+                                <div class="dropdown-btns d-flex justify-content-evenly align-items-center">
+                                    <a href="cart.html" class=" w-50 py-3">View cart</a>
+                                    <a href="checkout.html" class=" w-50 py-3">Checkout <i
+                                            class="fa-solid fa-circle-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar - end -->
+
+    <!-- navigation - start -->
+    <section class="navigation d-none d-none d-lg-block d-xl-block">
+        <div class="container">
+            <ul class="navigation-list d-flex">
+                <li class="navigation-item me-4 py-3"><a href="index.html">Home</a></li>
+                <li class="navigation-item me-4 py-3"><a href="index.html #hot-deal">Hot Deals</a></li>
+                <li class="navigation-item me-4 py-3"><a href="categories.html">Categories</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Laptops</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">SmartPhones</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Cameras</a></li>
+                <li class="navigation-item me-4 py-3"><a href="store.html">Accessories</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- navigation - end -->
+<!-- ******************************************************************************************************************************************************************************************************* -->
+
+
+    <!-- breadcrumb - start -->
+    <section class="breadcrumb-list">
+        <div class="container">
+            <div aria-label="breadcrumb">
+                <ol class="breadcrumb m-0 p-0 border-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="categories.html">all categories</a></li>
+                    <li class="breadcrumb-item text-uppercase" aria-current="page">Accessories</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb - end -->
+
+    <!-- store - start -->
+    <section class="store my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 aside">
+                    <div class="aside-categories">
+                        <div class="aside-section my-5">
+                            <h3 class="text-uppercase">categories</h3>
+                            <div class="">
+                                <div class="d-flex flex-column">
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="checkbox_id1">
+                                        <span></span>
+                                        <label for="checkbox_id1" class="text-capitalize">laptop <small
+                                                class="num">(110)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="checkbox_id2">
+                                        <span></span>
+                                        <label for="checkbox_id2" class="text-capitalize">smartphones <small
+                                                class="num">(98)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="checkbox_id3">
+                                        <span></span>
+                                        <label for="checkbox_id3" class="text-capitalize">cameras <small
+                                                class="num">(59)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="checkbox_id4">
+                                        <span></span>
+                                        <label for="checkbox_id4" class="text-capitalize">accessories <small
+                                                class="num">(156)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="checkbox_id5">
+                                        <span></span>
+                                        <label for="checkbox_id5" class="text-capitalize">headphones <small
+                                                class="num">(37)</small></label>
+                                    </div>
+                                    <div class="my-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="checkbox_id6">
+                                        <span></span>
+                                        <label for="checkbox_id6" class="text-capitalize">chargers <small
+                                                class="num">(120)</small></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price row">
+                        <div class="slider col-12 m-auto" id="slider"></div>
+                        <div class="row">
+                            <input class="col-5 col-md-5 m-auto mt-3" type="number" name="start-num1" id="input-number1">
+                            <input class="col-5 col-md-5 m-auto mt-3" type="number" name="start-num" id="input-number">
+                        </div>
+
+                    </div>
+                    <div class="aside-barnd">
+                        <div class="aside-section my-5">
+                            <h3 class="text-uppercase">brand</h3>
+                            <div class="">
+                                <div class="d-flex flex-column">
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="brand_id1">
+                                        <span></span>
+                                        <label for="brand_id1" class="text-uppercase">samsung <small
+                                                class="num">(13)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="brand_id2">
+                                        <span></span>
+                                        <label for="brand_id2" class="text-uppercase">apple <small
+                                                class="num">(83)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="brand_id3">
+                                        <span></span>
+                                        <label for="brand_id3" class="text-uppercase">lg <small
+                                                class="num">(120)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="brand_id4">
+                                        <span></span>
+                                        <label for="brand_id4" class="text-uppercase">sony <small
+                                                class="num">(113)</small></label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="brand_id5">
+                                        <span></span>
+                                        <label for="brand_id5" class="text-uppercase">asus <small
+                                                class="num">(120)</small></label>
+                                    </div>
+                                    <div class="my-3">
+                                        <input title="checkbox" class="check-box" type="checkbox" id="brand_id6">
+                                        <span></span>
+                                        <label for="brand_id6" class="text-uppercase">aoc <small
+                                                class="num">(127)</small></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-selling my-5">
+                        <div class="stuff">
+                            <h2 class="text-uppercase title">top selling</h2>
+                            <div class="view-top">
+                                <div class="">
+                                    <div class="item">
+                                        <div class="element mt-3 d-flex align-items-center">
+                                            <div class="element-img">
+                                                <img class="w-100" src="assets/img/products/product03.png" alt="1">
+                                            </div>
+                                            <div class="element-body ms-2">
+                                                <h3 class="text-uppercase product-cat">category</h3>
+                                                <h4 class="text-uppercase product-title">product name goes here</h4>
+                                                <div class="price">
+                                                    <span class="new">$1199.99</span>
+                                                    <span class="old text-decoration-line-through">$1800.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="element mt-3 d-flex justify-content-center align-items-center">
+                                            <div class="element-img">
+                                                <img class="w-100" src="assets/img/products/product02.png" alt="1">
+                                            </div>
+                                            <div class="element-body ms-2 w-75">
+                                                <h3 class="text-uppercase product-cat">category</h3>
+                                                <h4 class="text-uppercase product-title">product name goes here</h4>
+                                                <div class="price">
+                                                    <span class="new">$1199.99</span>
+                                                    <span class="old text-decoration-line-through">$1800.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="element mt-3 d-flex justify-content-center align-items-center">
+                                            <div class="element-img">
+                                                <img class="w-100" src="assets/img/products/product01.png" alt="1">
+                                            </div>
+                                            <div class="element-body ms-2 w-75">
+                                                <h3 class="text-uppercase product-cat">category</h3>
+                                                <h4 class="text-uppercase product-title">product name goes here</h4>
+                                                <div class="price">
+                                                    <span class="new">$1199.99</span>
+                                                    <span class="old text-decoration-line-through">$1800.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 store-item">
+                    <div class="products mt-5">
+                        <div class="store-top mb-5">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="sort d-flex mb-2">
+                                    <div class="sort-by d-flex">
+                                        <h4 class="text-uppercase me-2">sort by:</h4>
+                                        <select>
+                                            <option>Popular</option>
+                                            <option>best</option>
+                                        </select>
+                                    </div>
+                                    <div class="show-by d-flex ms-4">
+                                        <h4 class="text-uppercase me-2">show:</h4>
+                                        <select>
+                                            <option>20</option>
+                                            <option>50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="sort-icons d-flex">
+                                    <i class="fa-solid fa-table-cells me-3"></i>
+                                    <i class="fa-solid fa-list"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product01.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">Apple Mac-Book <span
+                                                class="text-lowercase">2nd</span> gen</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product02.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product03.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product04.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product05.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product06.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product07.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product08.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-md-6 col-lg-4">
+                                <div class="inner">
+                                    <div class="offer d-flex justify-content-end p-2">
+                                        <div class="discount">
+                                            <span class="price-discount me-1">-30%</span>
+                                        </div>
+                                        <div class="new-box">
+                                            <span class="text-uppercase new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-img mb-4">
+                                        <img src="assets/img/products/product09.png" alt="laptop1" class="w-100">
+                                    </div>
+                                    <div class="product-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="text-uppercase product-cat pb-1">category</p>
+                                        <a class="text-uppercase product-title py-1">product name goes here</a>
+                                        <div class="price py-1">
+                                            <span class="new">$1199.99</span>
+                                            <span class="old text-decoration-line-through">$1800.00</span>
+                                        </div>
+                                        <div class="product-rate py-1">
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                            <i class="fa-regular fa-star fill"></i>
+                                        </div>
+                                        <div class="product-icons p-3">
+                                            <i class="fa-regular fa-heart me-4 heart">
+                                                <span class="text-uppercase wishlist">add to wishlist</span>
+                                            </i>
+                                            <i class="fa-solid fa-right-left me-4 arrow">
+                                                <span class="text-uppercase compare">add to compare</span>
+                                            </i>
+                                            <i class="fa-regular fa-eye eye">
+                                                <span class="text-uppercase view">quick view</span>
+                                            </i>
+                                        </div>
+                                        <div class="add-cart">
+                                            <a href="#" class="text-uppercase"><i class="fa-solid fa-cart-shopping"></i> add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store-bottom mt-5">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="pages d-flex">
+                                    <div class="d-flex">
+                                        <span class="text-uppercase">showing 9-40 products</span>
+                                    </div>
+                                </div>
+                                <div class="page-num d-flex">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- store - end -->
+
+
+
+<!-- ******************************************************************************************************************************************************************************************************* -->
+    <!-- news-latter start -->
+    <section class="news py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <p class="pb-3">Sign Up for the <strong>NEWSLETTER</strong></p>
+                        <form class="d-flex justify-content-center pb-3">
+                            <input class="email" type="email" placeholder="Enter Your Email">
+                            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="newsletter-follow d-flex justify-content-center align-items-center my-4 gap-2">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="back-img">
+                        <img src="assets/img/envelope.png" class="w-25" alt="envelope">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news-latter end -->
+
+    <!-- footer - start -->
+    <footer class="footer-top pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut.
+                        </p>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-location-dot"></i>1734 Stonecoal Road</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>email@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Hot deals</a></li>
+                            <li><a href="store.html">Laptops</a></li>
+                            <li><a href="store.html">Smartphones</a></li>
+                            <li><a href="store.html">Cameras</a></li>
+                            <li><a href="store.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Information</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Orders and Returns</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="footer">
+                        <h3 class="footer-title">Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer - end -->
+
+    <!-- footer-bottom - start -->
+    <section class="footer-bottom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="footer-payments d-flex gap-2 justify-content-center align-items-center">
+                        <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-credit-card"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-discover"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-amex"></i></a></li>
+                    </ul>
+                    <span class="copyright">
+                        Copyright &copy; 2023 All rights reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-bottom - end -->
+
+    <!-- bootstrap js -->
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- jquery js -->
+    <script src="vendor/js/jquery-1.11.0.min.js"></script>
+    <!-- slick js -->
+    <script src="vendor/js/slick.min.js"></script>
+    <!-- noUiSlider js -->
+    <script src="vendor/js/nouislider.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+    <!-- custom product js -->
+    <script src="assets/js/products.js"></script>
+</body>
+
+</html>
